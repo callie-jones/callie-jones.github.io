@@ -96,7 +96,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-light); //fg-bold
+		color: _palette(fg-bold); //fg-bold
 		font-weight: _font(weight-extrabold);
 		letter-spacing: _size(letter-spacing-alt);
 		line-height: 1em;
@@ -130,7 +130,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	h4 {
-		//color: _palette(fg-light) !important;
+		color: _palette(fg-light) !important;
 		font-size: 1em;
 		line-height: 1.5em;
 	}
@@ -492,17 +492,23 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style1 {
-			color: _palette(accent2, bg);
+			color: _palette(accent1, bg);
 		}
 
 		&.style2 {
-			color: _palette(accent3, bg);
+			color: _palette(accent2, bg);
 		}
 
 		&.style3 {
-			color: _palette(accent4, bg);
+			color: _palette(accent1, bg);
 		}
 	}
+
+/* Gif */
+    .gif {
+        height: (_size(element-height)*6);
+        position: relative;
+    }
 
 /* Image */
 
@@ -521,6 +527,9 @@ $baseurl: '{{ site.baseurl }}/images';
 			float: left;
 			margin: 0 2em 2em 0;
 			top: 0.25em;
+            img {
+                height: (_size(element-height)*5); 
+            }
 		}
 
 		&.right {
@@ -529,7 +538,6 @@ $baseurl: '{{ site.baseurl }}/images';
 			top: 0.25em;
 		}
 
-		&.left,
 		&.right {
 			max-width: 40%;
 
@@ -1044,7 +1052,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 
 			h2, h3, h4, h5, h6 {
-				color: _palette($p, fg-light); //fg-bold
+				color: _palette($p, fg-bold); //fg-bold
 			}
 
 			hr {
@@ -1277,7 +1285,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		padding-top: 3em;
 
 		&:before {
-			background: darken(_palette(bg), 8); //rgba(0,0,0,0);
+			background: rgba(0,0,0,0);
 			content: '';
 			display: block;
 			display: none;
@@ -1742,7 +1750,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			a {
 				color: _palette(fg-light);
-
+                // scroll-behavior: smooth !important;
 				&:hover {
 					color: _palette(fg);
 				}
