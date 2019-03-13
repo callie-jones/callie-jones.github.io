@@ -4,14 +4,30 @@ title: Course Work
 ---
 <section id="machineLearning">
     <br><br>
-    <h4>Machine Learning</h4>
-    <p>info
+    <h4>Machine Learning Practicum</h4>
+    <p>As a part of my practicum, I was given a data set of 4000 tweets
+        in order to create classifiers to predict whether a tweet was sent
+        by Hillary Clinton or by Donald Trump. Using Logistic Regression
+        and Naive Bayes, I classified the data with the Naive Bayes performing
+        the best with an accuracy of 93.1. Perhaps the most challenging problem
+        was to use only Logistic Regression but to improve performance by
+        creating better features to classify the data. I used cross-validation
+        to evaluate my features. Using the test data, I achieved an
+        accuracy of 92.625. We also had a Kaggle competition where students
+        submitted their predictions. My Kaggle accuracy score was 90.583.
     </p>
 </section>
 <hr id="networkSystems"/>
 <section>
-    <h4>Network Systems</h4>
-    <p>info
+    <h4>Network Systems Distributed File System</h4>
+    <p>In this exercise, one Distributed File Client uploads and downloads
+        files onto and from 4 Distributed File Servers. When the client uploads
+        a file to the 4 servers, it first splits the file into 4 equal length
+        pieces and then groups the 4 pieces into 4 pairs and finally uploads the
+        file pieces onto the 4 servers. To determine which file pairs were
+        uploaded to which servers I used MD5 hash of the file name % 4. This
+        solution was also multi-threaded where the servers could serve multiple
+        clients concurrently.
     </p>
 </section>
 <hr />
